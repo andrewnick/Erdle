@@ -24,6 +24,15 @@ export default function Web() {
         </li>
         <li>
           <a
+            href="https://globle-game.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Globle
+          </a>
+        </li>
+        <li>
+          <a
             href="https://www.heardle.app/"
             target="_blank"
             rel="noopener noreferrer"
