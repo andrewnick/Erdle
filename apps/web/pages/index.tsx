@@ -4,7 +4,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/react/solid";
 export default function Web() {
   return (
     <div className="container">
-      <header className="py-5">
+      <header className="py-6">
         <div>
           <h1 className="text-5xl font-bold">Erdle</h1>
           <p>Bringing all your &quot;erdle&quot; games into one place</p>
@@ -12,7 +12,7 @@ export default function Web() {
       </header>
 
       <ul>
-        {links.map(({ title, link }, index) => (
+        {links.map(({ emoji, title, link }, index) => (
           <li
             className="border-2 rounded-md  mb-2 bg-white hover:bg-slate-200"
             key={index}
@@ -23,7 +23,9 @@ export default function Web() {
               rel="noopener noreferrer"
               className="flex justify-between items-center p-3"
             >
-              {title}
+              <div>
+                <span className="pr-2">{emoji}</span> <span>{title}</span>
+              </div>
 
               <ArrowNarrowRightIcon className="h-5 w-5" />
             </a>
