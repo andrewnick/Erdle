@@ -1,9 +1,27 @@
+import links from "../data/links";
 export default function Web() {
+  const list = {
+    padding: "0",
+  };
+
+  const listItem = {
+    padding: "10px",
+    // paddingBottom: "10px",
+  };
+
   return (
     <div>
       <h1>Erdle</h1>
       <p>Bringing all your &quot;erdle&quot; games into one place</p>
-      <ul>
+      <ul style={list}>
+        {links.map(({ title, link }) => (
+          <li style={listItem}>
+            <a href={link} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+          </li>
+        ))}
+        {/*         
         <li>
           <a
             href="https://www.nytimes.com/games/wordle/index.html"
@@ -48,7 +66,7 @@ export default function Web() {
           >
             Heardle
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
