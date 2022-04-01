@@ -1,12 +1,21 @@
+const withPlugins = require("next-compose-plugins");
+
 const withTM = require("next-transpile-modules")(["ui"]);
 const withPWA = require("next-pwa");
 
-module.exports = withTM({
+const nextConfig = {
   reactStrictMode: true,
-});
+};
 
-// module.exports = withPWA({
-//   pwa: {
-//     dest: "public",
-//   },
-// });
+const tm = [withTM];
+
+const pwa = [
+  withPWA,
+  {
+    pwa: {
+      dest: "public",
+    },
+  },
+];
+
+module.exports = withPlugins([tm, pwa], nextConfig);
