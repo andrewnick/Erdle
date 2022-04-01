@@ -15,6 +15,15 @@ export default function Web() {
         </li>
         <li>
           <a
+            href="https://www.quordle.com/#/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Quordle
+          </a>
+        </li>
+        <li>
+          <a
             href="https://worldle.teuteuf.fr/"
             target="_blank"
             rel="noopener noreferrer"
