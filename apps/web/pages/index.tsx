@@ -14,8 +14,8 @@ export default function Web() {
       <h1>Erdle</h1>
       <p>Bringing all your &quot;erdle&quot; games into one place</p>
       <ul style={list}>
-        {links.map(({ title, link }) => (
-          <li style={listItem}>
+        {links.map(({ title, link }, index) => (
+          <li style={listItem} key={index}>
             <a href={link} target="_blank" rel="noopener noreferrer">
               {title}
             </a>
