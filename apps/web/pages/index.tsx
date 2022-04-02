@@ -14,9 +14,12 @@ export default function Web() {
     padding: "0",
   };
 
+  const buttonDisplay = {
+    display: showButton ? "display" : "none",
+  };
+
   const listItem = {
     padding: "10px",
-    display: showButton ? "display" : "none",
   };
 
   const handleInstallPrompt = (e) => {
@@ -60,7 +63,9 @@ export default function Web() {
           <p>Bringing all your &quot;erdle&quot; games into one place</p>
         </div>
         <div>
-          <button onClick={handlePWAInstall}>Add to home screen</button>
+          <button onClick={handlePWAInstall} style={buttonDisplay}>
+            Add to home screen
+          </button>
         </div>
       </header>
 
