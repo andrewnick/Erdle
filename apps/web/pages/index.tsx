@@ -7,7 +7,7 @@ import usePWAInstaller from "../hooks/usePWAInstaller";
 
 export default function Web() {
   // const [showButton, handlePWAInstall] = usePWAInstaller();
-  const deferredPrompt = useRef<SyntheticEvent>(null);
+  const deferredPrompt = useRef<BeforeInstallPromptEvent>(null);
   const [showButton, setShowButton] = useState(false);
 
   const list = {
@@ -40,9 +40,9 @@ export default function Web() {
     // hide our user interface that shows our A2HS button
     setShowButton(false);
     // Show the prompt
-    deferredPrompt.current.prompt();
+    deferredPrompt?.current?.prompt();
     // Wait for the user to respond to the prompt
-    deferredPrompt.current.userChoice.then((choiceResult) => {
+    deferredPrompt?.current?.userChoice.then((choiceResult) => {
       if (choiceResult.outcome === "accepted") {
         console.log("User accepted the A2HS prompt");
       } else {
