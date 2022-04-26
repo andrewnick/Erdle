@@ -38,6 +38,11 @@ const links: ErdelLinks = [
     emoji: "🎵",
   },
   {
+    title: "Tradle",
+    link: "https://oec.world/en/tradle/",
+    emoji: "📈",
+  }
+  {
     title: "Numberle",
     link: "https://dduarte.github.io/numberle/",
     emoji: "🔢",
