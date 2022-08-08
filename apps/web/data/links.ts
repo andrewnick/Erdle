@@ -28,6 +28,16 @@ const links: ErdelLinks = [
     emoji: "🇳🇿",
   },
   {
+    title: "Angle",
+    link: "https://angle.wtf/",
+    emoji: "📐",
+  },
+  {
+    title: "Cerebrle",
+    link: "https://cerebrle.io/",
+    emoji: "🧠",
+  },
+  {
     title: "Worldle",
     link: "https://worldle.teuteuf.fr/",
     emoji: "🌏",
