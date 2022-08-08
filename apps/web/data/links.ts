@@ -23,6 +23,11 @@ const links: ErdelLinks = [
     emoji: "📖",
   },
   {
+    title: "Flagle",
+    link: "https://www.flagle.io/",
+    emoji: "🇳🇿",
+  },
+  {
     title: "Worldle",
     link: "https://worldle.teuteuf.fr/",
     emoji: "🌏",
@@ -34,7 +39,7 @@ const links: ErdelLinks = [
   },
   {
     title: "Heardle",
-    link: "https://www.heardle.app/",
+    link: "https://www.spotify.com/heardle/",
     emoji: "🎵",
   },
   {
